@@ -7,15 +7,16 @@ import { randomUUID } from "node:crypto";
 import { NextRequest, NextResponse } from "next/server";
 import { extractText } from "unpdf";
 import { bedrockClient, dynamoClient, s3Client } from "@/lib/aws";
+import { aiClient } from "@/lib/ai";
 
 export const runtime = "nodejs";
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 const MAX_CONTRACT_CHARS = 120_000;
 const MAX_REQUEST_CHARS = 8_000;
-// Active Bedrock model (us-east-1, ON_DEMAND). Old claude-3-5-sonnet-20240620 is EOL.
-// Kimi K2.5 runs in non-thinking JSON mode: requires temperature 1.0.
-const MODEL_ID = process.env.BEDROCK_MODEL_ID || "moonshotai.kimi-k2.5";
+
+const BEDROCK_MODEL_ID = process.env.BEDROCK_MODEL_ID || "moonshotai.kimi-k2.5";
+const GEMINI_MODEL_ID = process.env.GEMINI_MODEL_ID || "gemini-3.5-flash-lite";
 
 type AnalysisResult = {
   isScopeCreep: boolean;
@@ -48,27 +49,26 @@ function parseUserId(value: unknown): string | null {
 
 function normalizeResult(value: unknown): AnalysisResult {
   if (!value || typeof value !== "object" || Array.isArray(value)) {
-    throw new Error("Bedrock returned an invalid result.");
+    throw new Error("AI provider returned an invalid result.");
   }
 
   const candidate = value as Record<string, unknown>;
   const risk = candidate.riskLevel;
   const isScopeCreep = candidate.isScopeCreep;
-  if (typeof isScopeCreep !== "boolean") throw new Error("Bedrock returned an invalid scope assessment.");
-  if (risk !== "LOW" && risk !== "MEDIUM" && risk !== "HIGH") throw new Error("Bedrock returned an invalid risk level.");
-  // In-scope results legitimately have no violated clause — Kimi returns "".
-  // Only require a citation when scope actually changed.
+  if (typeof isScopeCreep !== "boolean") throw new Error("AI provider returned an invalid scope assessment.");
+  if (risk !== "LOW" && risk !== "MEDIUM" && risk !== "HIGH") throw new Error("AI provider returned an invalid risk level.");
+
   let violatedClause = typeof candidate.violatedClause === "string" ? candidate.violatedClause.trim() : "";
-  if (isScopeCreep && !violatedClause) throw new Error("Bedrock returned an invalid clause.");
+  if (isScopeCreep && !violatedClause) throw new Error("AI provider returned an invalid clause.");
   if (!violatedClause) violatedClause = "N/A — request is within agreed scope.";
-  if (typeof candidate.analysis !== "string" || !candidate.analysis.trim()) throw new Error("Bedrock returned invalid analysis.");
+  if (typeof candidate.analysis !== "string" || !candidate.analysis.trim()) throw new Error("AI provider returned invalid analysis.");
   if (typeof candidate.suggestedEmailResponse !== "string" || !candidate.suggestedEmailResponse.trim()) {
-    throw new Error("Bedrock returned an invalid response draft.");
+    throw new Error("AI provider returned an invalid response draft.");
   }
 
   const hours = candidate.estimatedExtraHours;
   if (typeof hours !== "number" || !Number.isFinite(hours) || hours < 0) {
-    throw new Error("Bedrock returned an invalid estimate.");
+    throw new Error("AI provider returned an invalid estimate.");
   }
 
   return {
@@ -89,7 +89,7 @@ function parseJsonResponse(text: string): unknown {
   } catch {
     const objectMatch = cleaned.match(/\{[\s\S]*\}/);
     if (objectMatch?.[0]) return JSON.parse(objectMatch[0]);
-    throw new Error("Bedrock returned malformed JSON.");
+    throw new Error("AI returned malformed JSON.");
   }
 }
 
@@ -163,16 +163,21 @@ export async function POST(request: NextRequest) {
       return jsonError("Contract text is too long.", 400);
     }
 
-    if (uploadedKey && uploadedBuffer) {
-      await s3Client.send(new PutObjectCommand({
-        Bucket: process.env.S3_BUCKET_NAME || "nova-contracts-assets",
-        Key: uploadedKey,
-        Body: uploadedBuffer,
-        ContentType: uploadedContentType,
-      }));
+    // Optional S3 archive if configured (gracefully skipped in 100% free mode)
+    if (s3Client && uploadedKey && uploadedBuffer) {
+      try {
+        await s3Client.send(new PutObjectCommand({
+          Bucket: process.env.S3_BUCKET_NAME || "nova-contracts-assets",
+          Key: uploadedKey,
+          Body: uploadedBuffer,
+          ContentType: uploadedContentType,
+        }));
+      } catch (s3Err) {
+        console.warn("S3 archive skipped or failed:", s3Err);
+      }
     }
 
-    const systemPrompt = `You are nova.ai, a contract compliance analyst. Compare a Statement of Work against an incoming client request. Use non-thinking mode. Return only valid JSON, with no markdown, no thinking trace, using exactly this schema: {"isScopeCreep": boolean, "riskLevel": "LOW" | "MEDIUM" | "HIGH", "violatedClause": string, "analysis": string, "estimatedExtraHours": number, "suggestedEmailResponse": string}.
+    const systemPrompt = `You are nova.ai, a contract compliance analyst. Compare a Statement of Work against an incoming client request. Return only valid JSON, with no markdown, no thinking trace, using exactly this schema: {"isScopeCreep": boolean, "riskLevel": "LOW" | "MEDIUM" | "HIGH", "violatedClause": string, "analysis": string, "estimatedExtraHours": number, "suggestedEmailResponse": string}.
 
   Use plain language that a freelancer can understand quickly. Be specific and concise:
   - violatedClause: quote or closely paraphrase only the relevant agreement language, in 1-3 sentences.
@@ -183,45 +188,70 @@ export async function POST(request: NextRequest) {
   Be conservative: missing detail is not proof of scope creep. Cite the relevant SOW language in violatedClause when scope has changed. ${TONE_INSTRUCTIONS[tone]}`;
     const userMessage = `STATEMENT OF WORK:\n${extractedContractText}\n\nINCOMING CLIENT REQUEST:\n${clientRequest}`;
 
-    const response = await bedrockClient.send(new ConverseCommand({
-      modelId: MODEL_ID,
-      system: [{ text: systemPrompt }],
-      messages: [{ role: "user", content: [{ text: userMessage }] }],
-      inferenceConfig: { temperature: 1.0, maxTokens: 4000 },
-    }));
+    let responseText = "";
 
-    const responseText = response.output?.message?.content?.find((item) => item.text)?.text;
-    if (!responseText) throw new Error("Bedrock returned an empty response.");
+    // 1. Try Gemini (100% Free tier)
+    if (aiClient) {
+      const response = await aiClient.models.generateContent({
+        model: GEMINI_MODEL_ID,
+        contents: [
+          {
+            role: "user",
+            parts: [{ text: `${systemPrompt}\n\n${userMessage}` }],
+          },
+        ],
+        config: {
+          responseMimeType: "application/json",
+          temperature: 0.2,
+        },
+      });
+      responseText = response.text || "";
+    } else if (bedrockClient) {
+      // 2. Fall back to AWS Bedrock if configured
+      const response = await bedrockClient.send(new ConverseCommand({
+        modelId: BEDROCK_MODEL_ID,
+        system: [{ text: systemPrompt }],
+        messages: [{ role: "user", content: [{ text: userMessage }] }],
+        inferenceConfig: { temperature: 1.0, maxTokens: 4000 },
+      }));
+      responseText = response.output?.message?.content?.find((item) => item.text)?.text || "";
+    } else {
+      return jsonError("No AI provider configured. Please set GEMINI_API_KEY in your environment for free AI analysis.", 500);
+    }
+
+    if (!responseText) throw new Error("AI provider returned an empty response.");
     const result = normalizeResult(parseJsonResponse(responseText));
-    const logId = `LOG-${Date.now()}-${randomUUID()}`;
-    // Auto-expire audit logs within 24h (DynamoDB TTL on ExpiresAt).
-    const expiresAt = Math.floor(Date.now() / 1000) + 24 * 60 * 60;
 
-    await dynamoClient.send(new PutItemCommand({
-      TableName: process.env.DYNAMODB_TABLE_NAME || "ScopeLogs",
-      Item: marshall({
-        LogId: logId,
-        Timestamp: new Date().toISOString(),
-        // Anonymous per-browser owner. History reads filter on this so a
-        // user only ever sees their own logs. Logs without UserId (legacy)
-        // are never returned by /api/history.
-        UserId: userId || "anonymous",
-        Tone: tone,
-        IsScopeCreep: result.isScopeCreep,
-        RiskLevel: result.riskLevel,
-        ClientRequest: clientRequest.slice(0, 500),
-        EstimatedHours: result.estimatedExtraHours,
-        ContractKey: uploadedKey || "pasted-text",
-        ExpiresAt: expiresAt,
-      }),
-    }));
+    // Optional DynamoDB logging if configured (client keeps full history locally in localStorage for free)
+    if (dynamoClient) {
+      try {
+        const logId = `LOG-${Date.now()}-${randomUUID()}`;
+        const expiresAt = Math.floor(Date.now() / 1000) + 24 * 60 * 60;
+        await dynamoClient.send(new PutItemCommand({
+          TableName: process.env.DYNAMODB_TABLE_NAME || "ScopeLogs",
+          Item: marshall({
+            LogId: logId,
+            Timestamp: new Date().toISOString(),
+            UserId: userId || "anonymous",
+            Tone: tone,
+            IsScopeCreep: result.isScopeCreep,
+            RiskLevel: result.riskLevel,
+            ClientRequest: clientRequest.slice(0, 500),
+            EstimatedHours: result.estimatedExtraHours,
+            ContractKey: uploadedKey || "pasted-text",
+            ExpiresAt: expiresAt,
+          }),
+        }));
+      } catch (ddbErr) {
+        console.warn("DynamoDB logging skipped or failed:", ddbErr);
+      }
+    }
 
     return NextResponse.json(result);
   } catch (error) {
     console.error("Analysis error", error);
     const message = error instanceof Error ? error.message : "Unknown server error";
-    // Keep internals in logs; users get plain words.
-    const friendly = /bedrock|malformed|invalid|empty response/i.test(message)
+    const friendly = /bedrock|gemini|malformed|invalid|empty response/i.test(message)
       ? "Hmm, that answer didn't come out right. Try again with a smaller file or compress your PDF."
       : message;
     return NextResponse.json({ error: `Failed to process scope evaluation: ${friendly}` }, { status: 500 });

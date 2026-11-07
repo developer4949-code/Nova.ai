@@ -269,7 +269,7 @@ export default function Analyzer() {
           </p>
         </div>
         <div className="sg-card flex items-center gap-2 self-start rounded-full border border-[var(--line)] bg-white/50 px-4 py-2 text-xs font-semibold tracking-wide text-[var(--muted)] md:self-end">
-          <span className="h-2 w-2 rounded-full bg-[var(--teal)]" /> AWS / BEDROCK ACTIVE
+          <span className="h-2 w-2 rounded-full bg-[var(--teal)]" /> AI ANALYZER ACTIVE
         </div>
       </header>
 
