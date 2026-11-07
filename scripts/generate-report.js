@@ -187,7 +187,7 @@ function generateReport() {
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(10);
   doc.setTextColor(100, 116, 139);
-  doc.text('CLOUD COMPUTING LABORATORY PROJECT REPORT', pageWidth / 2, cy, { align: 'center' });
+  doc.text('CLOUD COMPUTING PROJECT REPORT', pageWidth / 2, cy, { align: 'center' });
 
   cy += 28;
   doc.setFont('helvetica', 'bold');
