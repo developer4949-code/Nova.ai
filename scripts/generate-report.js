@@ -29,7 +29,7 @@ function generateReport() {
     doc.setFont('helvetica', 'normal');
     doc.setFontSize(8);
     doc.setTextColor(140, 150, 160);
-    doc.text('CLOUD COMPUTING PROJECT REPORT | NOVA AI PLATFORM', margin, 35);
+    doc.text('CLOUD COMPUTING PROJECT REPORT | IIIT BHUBANESWAR', margin, 35);
     doc.setDrawColor(220, 225, 230);
     doc.setLineWidth(0.5);
     doc.line(margin, 42, pageWidth - margin, 42);
@@ -42,7 +42,7 @@ function generateReport() {
     doc.setDrawColor(220, 225, 230);
     doc.setLineWidth(0.5);
     doc.line(margin, pageHeight - 35, pageWidth - margin, pageHeight - 35);
-    doc.text(`AWS Public Cloud Implementation - Group Project`, margin, pageHeight - 22);
+    doc.text('Nova AI — AWS Public Cloud Deployment', margin, pageHeight - 22);
     doc.text(`Page ${pageNumber}`, pageWidth - margin - 35, pageHeight - 22);
   }
 
@@ -52,7 +52,7 @@ function generateReport() {
     doc.setFillColor(30, 41, 59);
     doc.rect(margin, y - 2, 4, 18, 'F');
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(13);
+    doc.setFontSize(12.5);
     doc.setTextColor(30, 41, 59);
     doc.text(`${num}. ${title}`, margin + 12, y + 12);
     y += 24;
@@ -62,7 +62,7 @@ function generateReport() {
     checkPageBreak(25);
     y += 6;
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(10.5);
+    doc.setFontSize(10);
     doc.setTextColor(51, 65, 85);
     doc.text(title, margin, y + 8);
     y += 16;
@@ -70,7 +70,7 @@ function generateReport() {
 
   function drawParagraph(text) {
     doc.setFont('helvetica', 'normal');
-    doc.setFontSize(9.5);
+    doc.setFontSize(9.2);
     doc.setTextColor(71, 85, 105);
     const lines = doc.splitTextToSize(text, contentWidth);
     for (const line of lines) {
@@ -84,16 +84,14 @@ function generateReport() {
   function drawBullet(title, desc) {
     checkPageBreak(20);
     doc.setFont('helvetica', 'bold');
-    doc.setFontSize(9.5);
+    doc.setFontSize(9.2);
     doc.setTextColor(30, 41, 59);
     doc.text(`*  ${title}: `, margin + 8, y);
     const titleWidth = doc.getTextWidth(`*  ${title}: `);
     
     doc.setFont('helvetica', 'normal');
     doc.setTextColor(71, 85, 105);
-    const remainingText = desc;
-    const firstLineMax = contentWidth - 8 - titleWidth;
-    const splitDesc = doc.splitTextToSize(remainingText, contentWidth - 20);
+    const splitDesc = doc.splitTextToSize(desc, contentWidth - 20);
     
     if (splitDesc.length > 0) {
       doc.text(splitDesc[0], margin + 8 + titleWidth, y);
@@ -106,23 +104,6 @@ function generateReport() {
     } else {
       y += 13.5;
     }
-  }
-
-  function drawCodeBox(lines) {
-    const boxHeight = lines.length * 12 + 16;
-    checkPageBreak(boxHeight + 10);
-    doc.setFillColor(248, 250, 252);
-    doc.setDrawColor(226, 232, 240);
-    doc.rect(margin, y, contentWidth, boxHeight, 'FD');
-    doc.setFont('courier', 'normal');
-    doc.setFontSize(8);
-    doc.setTextColor(30, 41, 59);
-    let codeY = y + 12;
-    for (const line of lines) {
-      doc.text(line, margin + 12, codeY);
-      codeY += 12;
-    }
-    y += boxHeight + 10;
   }
 
   function drawTable(headers, rows) {
@@ -165,62 +146,169 @@ function generateReport() {
     y += 10;
   }
 
-  // ==================== COVER PAGE ====================
-  // Top Banner
-  doc.setFillColor(15, 23, 42); // Navy
-  doc.rect(0, 0, pageWidth, 170, 'F');
+  // =========================================================================
+  // PAGE 1: FORMAL ACADEMIC COVER / TITLE PAGE
+  // =========================================================================
 
-  doc.setFont('helvetica', 'bold');
-  doc.setFontSize(22);
-  doc.setTextColor(255, 255, 255);
-  doc.text('CLOUD COMPUTING PROJECT REPORT', margin, 70);
+  // Decorative border
+  doc.setDrawColor(203, 213, 225);
+  doc.setLineWidth(1.5);
+  doc.rect(25, 25, pageWidth - 50, pageHeight - 50);
+  doc.setLineWidth(0.5);
+  doc.rect(28, 28, pageWidth - 56, pageHeight - 56);
 
-  doc.setFont('helvetica', 'normal');
-  doc.setFontSize(12);
-  doc.setTextColor(148, 163, 184);
-  doc.text('Academic Project Submission Guidelines Compliance', margin, 92);
-
+  // Institution Header
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(14);
-  doc.setTextColor(56, 189, 248); // Sky blue
-  doc.text('Nova AI — Serverless Scope Creep Analysis & Compliance Platform', margin, 125);
+  doc.setTextColor(15, 23, 42);
+  doc.text('INTERNATIONAL INSTITUTE OF INFORMATION TECHNOLOGY', pageWidth / 2, 75, { align: 'center' });
+  doc.setFontSize(13);
+  doc.text('BHUBANESWAR', pageWidth / 2, 93, { align: 'center' });
 
   doc.setFont('helvetica', 'normal');
-  doc.setFontSize(10);
-  doc.setTextColor(203, 213, 225);
-  doc.text('Deployment on Amazon Web Services (AWS Public Cloud)', margin, 142);
+  doc.setFontSize(10.5);
+  doc.setTextColor(71, 85, 105);
+  doc.text('Department of Computer Science & Engineering', pageWidth / 2, 110, { align: 'center' });
 
-  y = 195;
-
-  // Project Info Card
-  doc.setFillColor(248, 250, 252);
   doc.setDrawColor(226, 232, 240);
-  doc.roundedRect(margin, y, contentWidth, 110, 6, 6, 'FD');
+  doc.setLineWidth(1);
+  doc.line(pageWidth / 2 - 140, 122, pageWidth / 2 + 140, 122);
 
+  // Logo
+  const logoPath = path.join(__dirname, '..', 'docs', 'iiit-logo.png');
+  if (fs.existsSync(logoPath)) {
+    const logoData = fs.readFileSync(logoPath).toString('base64');
+    const logoSize = 115;
+    doc.addImage(logoData, 'PNG', (pageWidth - logoSize) / 2, 140, logoSize, logoSize);
+  }
+
+  // Project Title Section
+  let cy = 285;
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(10);
+  doc.setTextColor(100, 116, 139);
+  doc.text('CLOUD COMPUTING LABORATORY PROJECT REPORT', pageWidth / 2, cy, { align: 'center' });
+
+  cy += 28;
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(26);
   doc.setTextColor(15, 23, 42);
-  doc.text('PROJECT METADATA & GROUP INFORMATION', margin + 14, y + 20);
+  doc.text('NOVA AI', pageWidth / 2, cy, { align: 'center' });
+
+  cy += 20;
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(12);
+  doc.setTextColor(2, 132, 199); // Sky blue
+  doc.text('Serverless Contract Scope Creep Analysis & Compliance Platform', pageWidth / 2, cy, { align: 'center' });
+
+  cy += 16;
+  doc.setFont('helvetica', 'normal');
+  doc.setFontSize(9.5);
+  doc.setTextColor(71, 85, 105);
+  doc.text('Designed & Deployed on Amazon Web Services (AWS Public Cloud)', pageWidth / 2, cy, { align: 'center' });
+
+  // Credential Boxes (Submitted By & Submitted To)
+  cy += 45;
+  const cardWidth = (contentWidth - 20) / 2;
+  const cardHeight = 160;
+
+  // Submitted By Box
+  doc.setFillColor(248, 250, 252);
+  doc.setDrawColor(226, 232, 240);
+  doc.roundedRect(margin, cy, cardWidth, cardHeight, 6, 6, 'FD');
+
+  doc.setFillColor(241, 245, 249);
+  doc.rect(margin, cy, cardWidth, 26, 'F');
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(9.5);
+  doc.setTextColor(30, 41, 59);
+  doc.text('SUBMITTED BY (STUDENTS)', margin + 12, cy + 17);
+
+  doc.setFont('helvetica', 'normal');
+  doc.setFontSize(9.2);
+  doc.setTextColor(51, 65, 85);
+
+  let sY = cy + 46;
+  doc.setFont('helvetica', 'bold');
+  doc.text('1. Debi Prasad Das', margin + 12, sY);
+  doc.setFont('helvetica', 'normal');
+  doc.text('Roll No: B123048', margin + 24, sY + 14);
+
+  sY += 36;
+  doc.setFont('helvetica', 'bold');
+  doc.text('2. Ayushman Sahani', margin + 12, sY);
+  doc.setFont('helvetica', 'normal');
+  doc.text('Roll No: B123035', margin + 24, sY + 14);
+
+  sY += 36;
+  doc.setFont('helvetica', 'bold');
+  doc.text('3. Kaushik Kumar Sahoo', margin + 12, sY);
+  doc.setFont('helvetica', 'normal');
+  doc.text('Roll No: B123066', margin + 24, sY + 14);
+
+  // Submitted To Box
+  const rightX = margin + cardWidth + 20;
+  doc.setFillColor(248, 250, 252);
+  doc.setDrawColor(226, 232, 240);
+  doc.roundedRect(rightX, cy, cardWidth, cardHeight, 6, 6, 'FD');
+
+  doc.setFillColor(241, 245, 249);
+  doc.rect(rightX, cy, cardWidth, 26, 'F');
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(9.5);
+  doc.setTextColor(30, 41, 59);
+  doc.text('SUBMITTED TO (FACULTY)', rightX + 12, cy + 17);
+
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(10.5);
+  doc.setTextColor(15, 23, 42);
+  doc.text('Dr. Bharat Mishra', rightX + 12, cy + 62);
 
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(71, 85, 105);
-  doc.text('Course: Cloud Computing (CS / IT Engineering)', margin + 14, y + 38);
-  doc.text('Public Cloud Provider: Amazon Web Services (AWS)', margin + 14, y + 54);
-  doc.text('Target Region: Asia Pacific (Sydney) - ap-southeast-2', margin + 14, y + 70);
-  doc.text('Live Deployment URL: http://3.26.15.247', margin + 14, y + 86);
+  doc.text('Assistant Professor', rightX + 12, cy + 78);
+  doc.text('Department of Computer Science & Engg.', rightX + 12, cy + 94);
+  doc.text('IIIT Bhubaneswar, Odisha, India', rightX + 12, cy + 110);
 
-  doc.text('Group Size: 3 Members', margin + 260, y + 38);
-  doc.text('Student 1: Debi Prasad (Lead Cloud Architect)', margin + 260, y + 54);
-  doc.text('Student 2: Team Member 2 (Backend / AI Dev)', margin + 260, y + 70);
-  doc.text('Student 3: Team Member 3 (Frontend / QA)', margin + 260, y + 86);
+  doc.setFont('helvetica', 'italic');
+  doc.setFontSize(8.5);
+  doc.setTextColor(100, 116, 139);
+  doc.text('Course: Cloud Computing (CS304)', rightX + 12, cy + 138);
 
-  y += 125;
+  // Bottom Academic Session
+  doc.setFont('helvetica', 'normal');
+  doc.setFontSize(9.5);
+  doc.setTextColor(100, 116, 139);
+  doc.text('Academic Session: 2026 – 2027  |  Bhubaneswar, Odisha', pageWidth / 2, pageHeight - 55, { align: 'center' });
+
+  // =========================================================================
+  // PAGE 2: EXECUTIVE SUMMARY & TABLE OF CONTENTS
+  // =========================================================================
+  doc.addPage();
+  pageNumber++;
+  y = margin + 20;
+  addHeader();
+
+  // Top Banner Card
+  doc.setFillColor(15, 23, 42);
+  doc.rect(margin, y, contentWidth, 75, 'F');
+  doc.setFont('helvetica', 'bold');
+  doc.setFontSize(16);
+  doc.setTextColor(255, 255, 255);
+  doc.text('PROJECT OVERVIEW & EXECUTIVE SUMMARY', margin + 14, y + 28);
+  doc.setFont('helvetica', 'normal');
+  doc.setFontSize(9.5);
+  doc.setTextColor(203, 213, 225);
+  doc.text('Nova AI: Serverless Contract Scope Creep Analysis on Amazon Web Services', margin + 14, y + 46);
+  doc.text('Target Region: Asia Pacific (Sydney - ap-southeast-2)  |  Live URL: http://3.26.15.247', margin + 14, y + 60);
+
+  y += 95;
 
   // Executive Summary Box
-  doc.setFillColor(238, 242, 255); // Indigo tint
+  doc.setFillColor(238, 242, 255);
   doc.setDrawColor(199, 210, 254);
-  doc.roundedRect(margin, y, contentWidth, 85, 6, 6, 'FD');
+  doc.roundedRect(margin, y, contentWidth, 95, 6, 6, 'FD');
 
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(10.5);
@@ -230,7 +318,7 @@ function generateReport() {
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(8.8);
   doc.setTextColor(67, 56, 202);
-  const execSummary = 'Nova AI is a full-stack, cloud-native application developed and deployed on Amazon Web Services (AWS) to solve contractual scope creep for freelancers, IT consulting firms, and agencies. The system ingests client agreements (PDF/DOCX/text), compares new client deliverables against the Statement of Work (SOW), predicts contractual risk levels, quantifies estimated extra hours, and drafts negotiation responses. The architecture integrates Amazon EC2, Amazon S3, Amazon DynamoDB, AWS IAM, VPC, and CloudWatch while strictly maintaining a 100% Zero-Cost / Free-Tier footprint.';
+  const execSummary = 'Nova AI is a full-stack, cloud-native application developed and deployed on Amazon Web Services (AWS) to solve contractual scope creep for freelancers, IT consulting firms, and software studios. The system ingests client agreements (PDF/DOCX/text), compares new client deliverables against the Statement of Work (SOW), predicts contractual risk levels, quantifies estimated extra hours, and drafts negotiation responses. The architecture integrates Amazon EC2, Amazon S3, Amazon DynamoDB, AWS IAM, VPC, and CloudWatch while strictly maintaining a 100% Zero-Cost / Free-Tier footprint.';
   const execLines = doc.splitTextToSize(execSummary, contentWidth - 28);
   let ey = y + 36;
   for (const line of execLines) {
@@ -238,21 +326,21 @@ function generateReport() {
     ey += 12;
   }
 
-  y += 105;
+  y += 115;
 
   // Table of Contents
   drawSectionHeading('1', 'TABLE OF CONTENTS');
   const toc = [
-    { title: '1. Problem Statement & Motivation', page: 2 },
-    { title: '2. Project Objectives & Expected Outcomes', page: 2 },
-    { title: '3. System Architecture & Cloud Infrastructure Design', page: 2 },
-    { title: '4. Cloud Services & Features Utilized', page: 3 },
-    { title: '5. Implementation Methodology & Technology Stack', page: 3 },
-    { title: '6. Security, Identity & Data Governance (IAM & IMDSv2)', page: 4 },
-    { title: '7. Experimental Verification, Test Cases & Results', page: 4 },
-    { title: '8. Cost Optimization & Free Tier Architectural Strategy', page: 5 },
-    { title: '9. Conclusion & Future Roadmap', page: 5 },
-    { title: '10. Verification Links & Source Code Repository', page: 5 }
+    { title: '1. Problem Statement & Motivation', page: 3 },
+    { title: '2. Project Objectives & Expected Outcomes', page: 3 },
+    { title: '3. System Architecture & Cloud Infrastructure Design', page: 3 },
+    { title: '4. Cloud Services & Features Utilized', page: 4 },
+    { title: '5. Implementation Methodology & Technology Stack', page: 4 },
+    { title: '6. Security, Identity & Data Governance (IAM & IMDSv2)', page: 5 },
+    { title: '7. Experimental Verification, Test Cases & Results', page: 5 },
+    { title: '8. Cost Optimization & Free Tier Architectural Strategy', page: 6 },
+    { title: '9. Conclusion & Future Roadmap', page: 6 },
+    { title: '10. Verification Links & Source Code Repository', page: 6 }
   ];
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
@@ -264,12 +352,15 @@ function generateReport() {
   }
 
   addFooter();
+
+  // =========================================================================
+  // PAGE 3: PROBLEM STATEMENT, OBJECTIVES & SYSTEM ARCHITECTURE
+  // =========================================================================
   doc.addPage();
   pageNumber++;
   y = margin + 20;
   addHeader();
 
-  // ==================== SECTION 1 & 2 ====================
   drawSectionHeading('1', 'PROBLEM STATEMENT & MOTIVATION');
   drawParagraph(
     'In modern software engineering, consulting, and freelance contracts, "Scope Creep" represents one of the largest unmitigated business risks. Scope creep occurs when clients request supplementary deliverables, modifications, or features that were not specified in the original Statement of Work (SOW) or Master Services Agreement (MSA).'
@@ -299,14 +390,12 @@ function generateReport() {
     const imgHeight = Math.round(contentWidth / 1.50);
     checkPageBreak(imgHeight + 35);
 
-    // Subtle container card for publication polish
     doc.setFillColor(255, 255, 255);
     doc.setDrawColor(226, 232, 240);
     doc.roundedRect(margin, y, imgWidth, imgHeight, 4, 4, 'FD');
     doc.addImage(imgData, 'JPEG', margin + 2, y + 2, imgWidth - 4, imgHeight - 4);
     y += imgHeight + 10;
 
-    // Elegant figure caption
     doc.setFont('helvetica', 'italic');
     doc.setFontSize(8.5);
     doc.setTextColor(100, 116, 139);
@@ -315,12 +404,15 @@ function generateReport() {
   }
 
   addFooter();
+
+  // =========================================================================
+  // PAGE 4: CLOUD SERVICES & IMPLEMENTATION METHODOLOGY
+  // =========================================================================
   doc.addPage();
   pageNumber++;
   y = margin + 20;
   addHeader();
 
-  // ==================== SECTION 4 & 5 ====================
   drawSectionHeading('4', 'CLOUD SERVICES & FEATURES UTILIZED');
   drawParagraph(
     'In accordance with university course requirements, multiple public cloud services from Amazon Web Services (AWS) were provisioned and integrated:'
@@ -360,12 +452,15 @@ function generateReport() {
   drawBullet('Daemon Reliability', 'PM2 manages the Next.js process, configured with systemd auto-start (`pm2 startup`) to guarantee service survival across instance restarts.');
 
   addFooter();
+
+  // =========================================================================
+  // PAGE 5: SECURITY & EXPERIMENTAL VERIFICATION
+  // =========================================================================
   doc.addPage();
   pageNumber++;
   y = margin + 20;
   addHeader();
 
-  // ==================== SECTION 6 & 7 ====================
   drawSectionHeading('6', 'SECURITY, IDENTITY & DATA GOVERNANCE');
   drawParagraph(
     'Cloud security and data privacy follow AWS Well-Architected Security Pillar best practices:'
@@ -405,12 +500,15 @@ function generateReport() {
   drawTable(perfHeaders, perfRows);
 
   addFooter();
+
+  // =========================================================================
+  // PAGE 6: COST OPTIMIZATION, CONCLUSION & DELIVERABLES
+  // =========================================================================
   doc.addPage();
   pageNumber++;
   y = margin + 20;
   addHeader();
 
-  // ==================== SECTION 8, 9 & 10 ====================
   drawSectionHeading('8', 'COST OPTIMIZATION & ZERO-COST STRATEGY');
   drawParagraph(
     'A central challenge in university cloud submissions is avoiding unexpected cloud billing. Traditional production blueprints prescribe an Application Load Balancer (ALB) and NAT Gateways, which cost ~$50/month even when idle. Our architecture intentionally substitutes these with zero-cost equivalents:'
@@ -447,4 +545,3 @@ function generateReport() {
 }
 
 generateReport();
-
