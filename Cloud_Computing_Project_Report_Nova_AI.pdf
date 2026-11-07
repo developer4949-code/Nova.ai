@@ -1,0 +1,2548 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 7377
+>>
+stream
+0.200025 w
+0 G
+0.06 0.09 0.16 rg
+0. 841.8899999999999864 595.2799999999999727 -170. re
+f
+BT
+/F2 22 Tf
+25.2999999999999972 TL
+1. g
+50. 771.8899999999999864 Td
+(CLOUD COMPUTING PROJECT REPORT) Tj
+ET
+BT
+/F1 12 Tf
+13.7999999999999989 TL
+0.58 0.639 0.722 rg
+50. 749.8899999999999864 Td
+(Academic Project Submission Guidelines Compliance) Tj
+ET
+BT
+/F2 14 Tf
+16.0999999999999979 TL
+0.22 0.741 0.973 rg
+50. 716.8899999999999864 Td
+(Nova AI — Serverless Scope Creep Analysis & Compliance Platform) Tj
+ET
+BT
+/F1 10 Tf
+11.5 TL
+0.796 0.835 0.882 rg
+50. 699.8899999999999864 Td
+(Deployment on Amazon Web Services \(AWS Public Cloud\)) Tj
+ET
+0.97 0.98 0.99 rg
+0.89 0.91 0.94 RG
+56. 646.8899999999999864 m
+539.2799999999999727 646.8899999999999864 l
+542.5937084989847108 646.8899999999999864 545.2799999999999727 644.2037084989847244 545.2799999999999727 640.8899999999999864 c
+545.2799999999999727 542.8899999999999864 l
+545.2799999999999727 539.5762915010152483 541.9662915010152346 536.8899999999999864 539.2799999999999727 536.8899999999999864 c
+56. 536.8899999999999864 l
+52.6862915010152406 536.8899999999999864 50. 540.2037084989847244 50. 542.8899999999999864 c
+50. 640.8899999999999864 l
+50. 644.2037084989847244 53.3137084989847594 646.8899999999999864 56. 646.8899999999999864 c
+h
+B
+BT
+/F2 10 Tf
+11.5 TL
+0.059 0.09 0.165 rg
+64. 626.8899999999999864 Td
+(PROJECT METADATA & GROUP INFORMATION) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+64. 608.8899999999999864 Td
+(Course: Cloud Computing \(CS / IT Engineering\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+64. 592.8899999999999864 Td
+(Public Cloud Provider: Amazon Web Services \(AWS\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+64. 576.8899999999999864 Td
+(Target Region: Asia Pacific \(Sydney\) - ap-southeast-2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+64. 560.8899999999999864 Td
+(Live Deployment URL: http://3.26.15.247) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+310. 608.8899999999999864 Td
+(Group Size: 3 Members) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+310. 592.8899999999999864 Td
+(Student 1: Debi Prasad \(Lead Cloud Architect\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+310. 576.8899999999999864 Td
+(Student 2: Team Member 2 \(Backend / AI Dev\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+310. 560.8899999999999864 Td
+(Student 3: Team Member 3 \(Frontend / QA\)) Tj
+ET
+0.93 0.95 1. rg
+0.78 0.82 1. RG
+56. 521.8899999999999864 m
+539.2799999999999727 521.8899999999999864 l
+542.5937084989847108 521.8899999999999864 545.2799999999999727 519.2037084989847244 545.2799999999999727 515.8899999999999864 c
+545.2799999999999727 442.8899999999999864 l
+545.2799999999999727 439.5762915010152483 541.9662915010152346 436.8899999999999864 539.2799999999999727 436.8899999999999864 c
+56. 436.8899999999999864 l
+52.6862915010152406 436.8899999999999864 50. 440.2037084989847244 50. 442.8899999999999864 c
+50. 515.8899999999999864 l
+50. 519.2037084989847244 53.3137084989847594 521.8899999999999864 56. 521.8899999999999864 c
+h
+B
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.192 0.18 0.506 rg
+64. 501.8899999999999864 Td
+(EXECUTIVE SUMMARY) Tj
+ET
+BT
+/F1 8.8 Tf
+10.1199999999999992 TL
+0.263 0.22 0.792 rg
+64. 485.8899999999999864 Td
+(Nova AI is a full-stack, cloud-native application developed and deployed on Amazon Web Services \(AWS\) to solve) Tj
+ET
+BT
+/F1 8.8 Tf
+10.1199999999999992 TL
+0.263 0.22 0.792 rg
+64. 473.8899999999999864 Td
+(contractual scope creep for freelancers, IT consulting firms, and agencies. The system ingests client agreements) Tj
+ET
+BT
+/F1 8.8 Tf
+10.1199999999999992 TL
+0.263 0.22 0.792 rg
+64. 461.8899999999999864 Td
+(\(PDF/DOCX/text\), compares new client deliverables against the Statement of Work \(SOW\), predicts contractual risk) Tj
+ET
+BT
+/F1 8.8 Tf
+10.1199999999999992 TL
+0.263 0.22 0.792 rg
+64. 449.8899999999999864 Td
+(levels, quantifies estimated extra hours, and drafts negotiation responses. The architecture integrates Amazon EC2,) Tj
+ET
+BT
+/F1 8.8 Tf
+10.1199999999999992 TL
+0.263 0.22 0.792 rg
+64. 437.8899999999999864 Td
+(Amazon S3, Amazon DynamoDB, AWS IAM, VPC, and CloudWatch while strictly maintaining a 100% Zero-Cost /) Tj
+ET
+BT
+/F1 8.8 Tf
+10.1199999999999992 TL
+0.263 0.22 0.792 rg
+64. 425.8899999999999864 Td
+(Free-Tier footprint.) Tj
+ET
+0.12 0.16 0.23 rg
+50. 406.8899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 392.8899999999999864 Td
+(1. TABLE OF CONTENTS) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 380.8899999999999864 Td
+(1. Problem Statement & Motivation) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 380.8899999999999864 Td
+(Page 2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 366.8899999999999864 Td
+(2. Project Objectives & Expected Outcomes) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 366.8899999999999864 Td
+(Page 2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 352.8899999999999864 Td
+(3. System Architecture & Cloud Infrastructure Design) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 352.8899999999999864 Td
+(Page 2) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 338.8899999999999864 Td
+(4. Cloud Services & Features Utilized) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 338.8899999999999864 Td
+(Page 3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 324.8899999999999864 Td
+(5. Implementation Methodology & Technology Stack) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 324.8899999999999864 Td
+(Page 3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 310.8899999999999864 Td
+(6. Security, Identity & Data Governance \(IAM & IMDSv2\)) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 310.8899999999999864 Td
+(Page 3) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 296.8899999999999864 Td
+(7. Experimental Verification, Test Cases & Results) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 296.8899999999999864 Td
+(Page 4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 282.8899999999999864 Td
+(8. Cost Optimization & Free Tier Architectural Strategy) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 282.8899999999999864 Td
+(Page 4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 268.8899999999999864 Td
+(9. Conclusion & Future Roadmap) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 268.8899999999999864 Td
+(Page 4) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+60. 254.8899999999999864 Td
+(10. Verification Links & Source Code Repository) Tj
+ET
+BT
+/F1 9 Tf
+10.3499999999999996 TL
+0.278 0.333 0.412 rg
+510.2799999999999727 254.8899999999999864 Td
+(Page 5) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 35. m
+545.2799999999999727 35. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 22. Td
+(AWS Public Cloud Implementation - Group Project) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+510.2799999999999727 22. Td
+(Page 1) Tj
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 6 0 R
+>>
+endobj
+6 0 obj
+<<
+/Length 5746
+>>
+stream
+0.5 w
+0.86 0.88 0.9 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 806.8899999999999864 Td
+(CLOUD COMPUTING PROJECT REPORT | NOVA AI PLATFORM) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 799.8899999999999864 m
+545.2799999999999727 799.8899999999999864 l
+S
+0.12 0.16 0.23 rg
+50. 761.8899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 747.8899999999999864 Td
+(1. PROBLEM STATEMENT & MOTIVATION) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 735.8899999999999864 Td
+(In modern software engineering, consulting, and freelance contracts, "Scope Creep" represents one of the largest) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 722.3899999999999864 Td
+(unmitigated business risks. Scope creep occurs when clients request supplementary deliverables, modifications, or) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 708.8899999999999864 Td
+(features that were not specified in the original Statement of Work \(SOW\) or Master Services Agreement \(MSA\).) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 689.3899999999999864 Td
+(Because small studios and independent developers lack in-house legal and commercial teams, they often concede to) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 675.8899999999999864 Td
+(extra work unpaid to avoid conflict, leading to severe margin erosion, missed delivery milestones, and team burnout.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 662.3899999999999864 Td
+(Manual review of complex 20-page legal contracts against colloquial chat messages \(Slack, WhatsApp, Email\) is) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 648.8899999999999864 Td
+(tedious and error-prone. A cloud-native solution capable of instant contractual text parsing, risk assessment, and) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 635.3899999999999864 Td
+(negotiation drafting is urgently required.) Tj
+ET
+0.12 0.16 0.23 rg
+50. 605.8899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 591.8899999999999864 Td
+(2. PROJECT OBJECTIVES & EXPECTED OUTCOMES) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 579.8899999999999864 Td
+(*  Cloud Deployment: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+156.5149999999999864 579.8899999999999864 Td
+(Deploy a reliable, production-ready full-stack application on a tier-1 public cloud provider \(AWS\).) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 566.3899999999999864 Td
+(*  Automated Parsing: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+159.5549999999999784 566.3899999999999864 Td
+(Extract and process unstructured contract text from PDF and DOCX documents in-memory on the cloud.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 552.8899999999999864 Td
+(*  Intelligent Scope Evaluation: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+198.9799999999999898 552.8899999999999864 Td
+(Employ structured LLM reasoning to evaluate client asks against explicit contract clauses, outputting deterministic) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 539.3899999999999864 Td
+(JSON results.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 525.8899999999999864 Td
+(*  Risk Classification: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+156.8949999999999818 525.8899999999999864 Td
+(Assign deterministic risk levels \(LOW, MEDIUM, HIGH\) with estimated extra effort \(hours\) to guide commercial) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 512.3899999999999864 Td
+(billing.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 498.8899999999999864 Td
+(*  Ephemeral Audit Logging: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+188.1499999999999488 498.8899999999999864 Td
+(Store audit logs in a scalable NoSQL database with automated 24-hour Time-To-Live \(TTL\) expiration for data) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 485.3899999999999864 Td
+(privacy.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 471.8899999999999864 Td
+(*  Zero Operational Cost: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+172.285000000000025 471.8899999999999864 Td
+(Architect the entire cloud deployment within the perpetual AWS Free Tier, preventing student billing charges.) Tj
+ET
+0.12 0.16 0.23 rg
+50. 448.3899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 434.3899999999999864 Td
+(3. SYSTEM ARCHITECTURE & INFRASTRUCTURE DESIGN) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 422.3899999999999864 Td
+(The application follows a cloud-native, decoupled client-server architecture deployed in the AWS Asia Pacific \(Sydney) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 408.8899999999999864 Td
+(- ap-southeast-2\) region. Incoming traffic enters through standard HTTP port 80 and is routed by an Nginx reverse) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 395.3899999999999864 Td
+(proxy to a Node.js process managed by PM2.) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+50. 361.8899999999999864 Td
+(High-Level Cloud Architecture Diagram) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 35. m
+545.2799999999999727 35. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 22. Td
+(AWS Public Cloud Implementation - Group Project) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+510.2799999999999727 22. Td
+(Page 2) Tj
+ET
+endstream
+endobj
+7 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 8 0 R
+>>
+endobj
+8 0 obj
+<<
+/Length 6335
+>>
+stream
+0.5 w
+0.86 0.88 0.9 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 806.8899999999999864 Td
+(CLOUD COMPUTING PROJECT REPORT | NOVA AI PLATFORM) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 799.8899999999999864 m
+545.2799999999999727 799.8899999999999864 l
+S
+0.97 0.98 0.99 rg
+0.89 0.91 0.94 RG
+50. 771.8899999999999864 495.2799999999999727 -388. re
+B
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 759.8899999999999864 Td
+(+-----------------------------------------------------------------------------------------+) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 747.8899999999999864 Td
+(|                         CLIENT LAYER \(Browser / Evaluator\)                              |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 735.8899999999999864 Td
+(+-----------------------------------------------------------------------------------------+) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 723.8899999999999864 Td
+(                                           | HTTP Port 80                                  ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 711.8899999999999864 Td
+(                                           v                                               ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 699.8899999999999864 Td
+(+-----------------------------------------------------------------------------------------+) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 687.8899999999999864 Td
+(|              AMAZON EC2 VIRTUAL MACHINE \(ap-southeast-2 / Sydney\)                       |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 675.8899999999999864 Td
+(|  OS: Amazon Linux 2023 \(64-bit x86_64\) | Instance Type: t3.micro \(Free Tier\)            |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 663.8899999999999864 Td
+(|  Memory: 1 GB RAM + 2 GB Swap Space    | Storage: 20 GB gp3 Root Volume                 |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 651.8899999999999864 Td
+(|  +-----------------------------------------------------------------------------------+  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 639.8899999999999864 Td
+(|  | Nginx Reverse Proxy \(Port 80 -> Port 3000\)                                        |  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 627.8899999999999864 Td
+(|  +-----------------------------------------------------------------------------------+  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 615.8899999999999864 Td
+(|  | PM2 Process Manager \(Auto-restart, systemd integration\)                           |  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 603.8899999999999864 Td
+(|  | +-------------------------------------------------------------------------------+ |  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 591.8899999999999864 Td
+(|  | | Next.js 15 + React 19 Application Server \(Port 3000\)                          | |  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 579.8899999999999864 Td
+(|  | | - UI Layer: React, Tailwind CSS v4, Lucide Icons, Client History \(LocalStorage\) | |  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 567.8899999999999864 Td
+(|  | | - API Layer: /api/analyze \(Mammoth.js, unpdf parser, Model Normalizer\)        | |  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 555.8899999999999864 Td
+(|  | +-------------------------------------------------------------------------------+ |  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 543.8899999999999864 Td
+(|  +-----------------------------------------------------------------------------------+  |) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 531.8899999999999864 Td
+(+-----------------------------------------------------------------------------------------+) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 519.8899999999999864 Td
+(         |                                 |                                 |             ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 507.8899999999999864 Td
+(         v S3 API \(SDK v3\)                 v DynamoDB API \(SDK v3\)           v HTTPS REST  ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 495.8899999999999864 Td
+(+--------------------+          +--------------------+          +------------------------+ ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 483.8899999999999864 Td
+(|     AMAZON S3      |          |  AMAZON DYNAMODB   |          |  AI INFERENCE ENGINE   | ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 471.8899999999999864 Td
+(| Bucket:            |          | Table: ScopeLogs   |          | Model: Gemini Flash /  | ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 459.8899999999999864 Td
+(| nova-contracts-    |          | Billing: On-Demand |          | Bedrock Converse       | ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 447.8899999999999864 Td
+(| debi-2026          |          | TTL: ExpiresAt 24h |          | Output: Strict JSON    | ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 435.8899999999999864 Td
+(+--------------------+          +--------------------+          +------------------------+ ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 423.8899999999999864 Td
+(         ^                                 ^                                               ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 411.8899999999999864 Td
+(         +------------------- AWS IAM ROLE ------------------------------------------------+ ) Tj
+ET
+BT
+/F5 8 Tf
+9.1999999999999993 TL
+0.118 0.161 0.231 rg
+62. 399.8899999999999864 Td
+(                             Instance Profile: nova-EC2-Role \(Least Privilege\)             ) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 35. m
+545.2799999999999727 35. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 22. Td
+(AWS Public Cloud Implementation - Group Project) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+510.2799999999999727 22. Td
+(Page 3) Tj
+ET
+endstream
+endobj
+9 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 10 0 R
+>>
+endobj
+10 0 obj
+<<
+/Length 11290
+>>
+stream
+0.5 w
+0.86 0.88 0.9 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 806.8899999999999864 Td
+(CLOUD COMPUTING PROJECT REPORT | NOVA AI PLATFORM) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 799.8899999999999864 m
+545.2799999999999727 799.8899999999999864 l
+S
+0.12 0.16 0.23 rg
+50. 761.8899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 747.8899999999999864 Td
+(4. CLOUD SERVICES & FEATURES UTILIZED) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 735.8899999999999864 Td
+(In accordance with university course requirements, multiple public cloud services from Amazon Web Services \(AWS\)) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 722.3899999999999864 Td
+(were provisioned and integrated:) Tj
+ET
+0.95 0.96 0.98 rg
+50. 702.8899999999999864 495.2799999999999727 -20. re
+f
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+56. 689.8899999999999864 Td
+(AWS Service) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+166. 689.8899999999999864 Td
+(Resource Name / ID) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+316. 689.8899999999999864 Td
+(Configuration) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+426. 689.8899999999999864 Td
+(Role in Solution) Tj
+ET
+0.89 0.91 0.94 RG
+50. 662.8899999999999864 m
+545.2799999999999727 662.8899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 669.8899999999999864 Td
+(Amazon EC2) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 669.8899999999999864 Td
+(nova-ai-server \(t3.micro\)) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 669.8899999999999864 Td
+(Amazon Linux 2023, 20GB gp3) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 669.8899999999999864 Td
+(Host application & Nginx reverse proxy) Tj
+ET
+0.97 0.98 0.99 rg
+50. 662.8899999999999864 495.2799999999999727 -20. re
+f
+0.89 0.91 0.94 RG
+50. 642.8899999999999864 m
+545.2799999999999727 642.8899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 649.8899999999999864 Td
+(Amazon S3) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 649.8899999999999864 Td
+(nova-contracts-debi-2026) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 649.8899999999999864 Td
+(Private, AES-256 SSE, Block Public) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 649.8899999999999864 Td
+(Raw contract document archiving) Tj
+ET
+0.89 0.91 0.94 RG
+50. 622.8899999999999864 m
+545.2799999999999727 622.8899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 629.8899999999999864 Td
+(Amazon DynamoDB) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 629.8899999999999864 Td
+(ScopeLogs) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 629.8899999999999864 Td
+(PAY_PER_REQUEST, TTL on ExpiresAt) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 629.8899999999999864 Td
+(NoSQL serverless audit trail storage) Tj
+ET
+0.97 0.98 0.99 rg
+50. 622.8899999999999864 495.2799999999999727 -20. re
+f
+0.89 0.91 0.94 RG
+50. 602.8899999999999864 m
+545.2799999999999727 602.8899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 609.8899999999999864 Td
+(AWS IAM) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 609.8899999999999864 Td
+(nova-EC2-Role) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 609.8899999999999864 Td
+(EC2 Instance Profile, Least Privilege) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 609.8899999999999864 Td
+(Keyless tokenized authorization \(IMDSv2\)) Tj
+ET
+0.89 0.91 0.94 RG
+50. 582.8899999999999864 m
+545.2799999999999727 582.8899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 589.8899999999999864 Td
+(Amazon VPC) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 589.8899999999999864 Td
+(Default VPC \(Sydney\)) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 589.8899999999999864 Td
+(Public Subnet, Internet Gateway) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 589.8899999999999864 Td
+(Network perimeter isolation & routing) Tj
+ET
+0.97 0.98 0.99 rg
+50. 582.8899999999999864 495.2799999999999727 -20. re
+f
+0.89 0.91 0.94 RG
+50. 562.8899999999999864 m
+545.2799999999999727 562.8899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 569.8899999999999864 Td
+(EC2 Security Groups) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 569.8899999999999864 Td
+(nova-sg) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 569.8899999999999864 Td
+(Inbound: 22, 80, 443 \(0.0.0.0/0\)) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 569.8899999999999864 Td
+(Virtual stateful firewall) Tj
+ET
+0.89 0.91 0.94 RG
+50. 542.8899999999999864 m
+545.2799999999999727 542.8899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 549.8899999999999864 Td
+(Amazon CloudWatch) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 549.8899999999999864 Td
+(EC2 Basic Monitoring) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 549.8899999999999864 Td
+(CPU, Network In/Out, Disk IOPS) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 549.8899999999999864 Td
+(Server health and metrics observation) Tj
+ET
+0.12 0.16 0.23 rg
+50. 522.8899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 508.8899999999999864 Td
+(5. IMPLEMENTATION METHODOLOGY & ARCHITECTURE) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 496.8899999999999864 Td
+(The implementation was executed in modular layers to guarantee high availability, speed, and clean separation of) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 483.3899999999999864 Td
+(concerns:) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+50. 449.8899999999999864 Td
+(A. Frontend User Interface \(Next.js 15 & React 19\)) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 441.8899999999999864 Td
+(*  Responsive Dashboard: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+177.8899999999999864 441.8899999999999864 Td
+(Engineered using Tailwind CSS v4 with unified design tokens, dark mode toggle, and accessible typography.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 428.3899999999999864 Td
+(*  Multi-stage Progress: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+166.3000000000000114 428.3899999999999864 Td
+(During model reasoning, the UI cycles through informative states \("Reading agreement...", "Checking clauses...",) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 414.8899999999999864 Td
+("Drafting reply..."\) to eliminate perceived latency.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 401.3899999999999864 Td
+(*  Client-side History: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+156.4199999999999875 401.3899999999999864 Td
+(Maintains full local history inside browser LocalStorage for complete privacy and instant recall without incurring) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 387.8899999999999864 Td
+(database charges.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 374.3899999999999864 Td
+(*  PDF Export: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+124.3100000000000023 374.3899999999999864 Td
+(Client-side PDF report generation utilizing jsPDF enables one-click offline report downloads for commercial client) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 360.8899999999999864 Td
+(meetings.) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+50. 333.3899999999999864 Td
+(B. Backend Processing Pipeline \(/api/analyze\)) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 325.3899999999999864 Td
+(*  Document Extraction: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+167.9150000000000205 325.3899999999999864 Td
+(Integrates mammoth.js for .docx Word files and unpdf for binary PDF text parsing directly in Node.js buffers) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 311.8899999999999864 Td
+(without writing to disk.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 298.3899999999999864 Td
+(*  Prompt Engineering: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+163.3550000000000182 298.3899999999999864 Td
+(Enforces strict persona boundaries \("nova.ai contract compliance analyst"\) with conservative detection logic and) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 284.8899999999999864 Td
+(JSON schema constraints.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 271.3899999999999864 Td
+(*  Schema Normalization: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+174.3749999999999716 271.3899999999999864 Td
+(Validates parsed JSON against the TypeScript AnalysisResult contract \(isScopeCreep, riskLevel, violatedClause,) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 257.8899999999999864 Td
+(estimatedExtraHours, suggestedEmailResponse\).) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+50. 230.3899999999999864 Td
+(C. Cloud Initialization & Process Management \(USER_DATA.sh\)) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 222.3899999999999864 Td
+(*  Linux Swap Configuration: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+190.2399999999999807 222.3899999999999864 Td
+(Automatically provisions a 2GB swap partition \(`/swapfile`\) at instance launch. This overcomes the 1GB RAM) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 208.8899999999999864 Td
+(constraint of t3.micro and prevents Next.js compilation OOM crashes.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 195.3899999999999864 Td
+(*  Reverse Proxying: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+152.6199999999999761 195.3899999999999864 Td
+(Nginx terminates HTTP port 80 traffic and seamlessly forwards requests to upstream Next.js on internal port 3000) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 181.8899999999999864 Td
+(with WebSocket and HTTP/1.1 support.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 168.3899999999999864 Td
+(*  Daemon Reliability: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+157.5600000000000023 168.3899999999999864 Td
+(PM2 manages the Next.js process, configured with systemd auto-start \(`pm2 startup`\) to guarantee service) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 154.8899999999999864 Td
+(survival across instance restarts.) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 35. m
+545.2799999999999727 35. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 22. Td
+(AWS Public Cloud Implementation - Group Project) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+510.2799999999999727 22. Td
+(Page 4) Tj
+ET
+endstream
+endobj
+11 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Length 10590
+>>
+stream
+0.5 w
+0.86 0.88 0.9 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 806.8899999999999864 Td
+(CLOUD COMPUTING PROJECT REPORT | NOVA AI PLATFORM) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 799.8899999999999864 m
+545.2799999999999727 799.8899999999999864 l
+S
+0.12 0.16 0.23 rg
+50. 761.8899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 747.8899999999999864 Td
+(6. SECURITY, IDENTITY & DATA GOVERNANCE) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 735.8899999999999864 Td
+(Cloud security and data privacy follow AWS Well-Architected Security Pillar best practices:) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 716.3899999999999864 Td
+(*  Zero Hardcoded Credentials: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+199.5500000000000114 716.3899999999999864 Td
+(The EC2 virtual machine contains zero AWS Access Keys or Secrets. Authentication to S3 and DynamoDB is) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 702.8899999999999864 Td
+(performed entirely via temporary STS credentials provided by the EC2 Instance Profile \(nova-EC2-Role\).) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 689.3899999999999864 Td
+(*  IMDSv2 Enforcement: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+167.3450000000000273 689.3899999999999864 Td
+(Instance Metadata Service Version 2 \(token-based session\) is enforced to prevent Server-Side Request Forgery) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 675.8899999999999864 Td
+(\(SSRF\) credential theft.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 662.3899999999999864 Td
+(*  S3 Block Public Access: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+179.410000000000025 662.3899999999999864 Td
+(The S3 bucket `nova-contracts-debi-2026` enforces complete Block Public Access, server-side encryption) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 648.8899999999999864 Td
+(\(SSE-S3 AES-256\), and HTTPS-only transport policies.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 635.3899999999999864 Td
+(*  Automated Data Expiration \(TTL\): ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+220.5449999999999591 635.3899999999999864 Td
+(All DynamoDB audit records include an integer epoch `ExpiresAt = now + 86400` \(24 hours\). DynamoDB native) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 621.8899999999999864 Td
+(TTL automatically purges expired records at zero compute cost.) Tj
+ET
+0.12 0.16 0.23 rg
+50. 598.3899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 584.3899999999999864 Td
+(7. EXPERIMENTAL VERIFICATION, TEST CASES & RESULTS) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 572.3899999999999864 Td
+(System functionality was verified through live E2E testing against the deployed Sydney instance \(3.26.15.247\):) Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+50. 538.8899999999999864 Td
+(Test Scenario 1: Out-of-Scope High Risk Request \(Scope Creep\)) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 530.8899999999999864 Td
+(*  Input SOW: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+121.2700000000000102 530.8899999999999864 Td
+("The project includes a responsive marketing website with up to five pages. Copywriting and new integrations are) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 517.3899999999999864 Td
+(excluded.") Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 503.8899999999999864 Td
+(*  Client Request: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+139.0349999999999966 503.8899999999999864 Td
+("Could you also add a customer portal with login, billing history, and a dashboard for the sales team?") Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 490.3899999999999864 Td
+(*  System Output: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+140.0800000000000125 490.3899999999999864 Td
+(Extra Work: YES | Risk Level: HIGH | Estimated Extra Hours: 80h) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 476.8899999999999864 Td
+(*  Cited Clause: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+130.1050000000000182 476.8899999999999864 Td
+("Copywriting, ongoing content updates, and new integrations are excluded from this engagement.") Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 463.3899999999999864 Td
+(*  Generated Reply: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+147.9650000000000034 463.3899999999999864 Td
+("Hi [Client], thanks for reaching out. The requested customer portal and billing dashboard involve new backend) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 449.8899999999999864 Td
+(architecture and integrations, which are excluded under our current five-page website SOW. I would be happy to) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 436.3899999999999864 Td
+(prepare a separate change order...") Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+50. 408.8899999999999864 Td
+(Test Scenario 2: In-Scope Low Risk Request \(Permitted Maintenance\)) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 400.8899999999999864 Td
+(*  Input SOW: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+121.2700000000000102 400.8899999999999864 Td
+("Contract includes responsive design, testing, and 30 days of post-launch minor text corrections.") Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 387.3899999999999864 Td
+(*  Client Request: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+139.0349999999999966 387.3899999999999864 Td
+("There is a typo on the about page text headline. Please update it.") Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 373.8899999999999864 Td
+(*  System Output: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+140.0800000000000125 373.8899999999999864 Td
+(Extra Work: NO | Risk Level: LOW | Estimated Extra Hours: 0h | Citation: "N/A — within agreed scope.") Tj
+ET
+BT
+/F2 10.5 Tf
+12.0749999999999993 TL
+0.2 0.255 0.333 rg
+50. 346.3899999999999864 Td
+(Performance & Reliability Metrics) Tj
+ET
+0.95 0.96 0.98 rg
+50. 338.3899999999999864 495.2799999999999727 -20. re
+f
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+56. 325.3899999999999864 Td
+(Metric) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+166. 325.3899999999999864 Td
+(Observed Value) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+316. 325.3899999999999864 Td
+(Benchmark Standard) Tj
+ET
+BT
+/F2 8.5 Tf
+9.7749999999999986 TL
+0.118 0.161 0.231 rg
+426. 325.3899999999999864 Td
+(Status) Tj
+ET
+0.89 0.91 0.94 RG
+50. 298.3899999999999864 m
+545.2799999999999727 298.3899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 305.3899999999999864 Td
+(Document Parsing Latency) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 305.3899999999999864 Td
+(180 ms \(PDF / DOCX\)) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 305.3899999999999864 Td
+(< 500 ms) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 305.3899999999999864 Td
+(PASSED) Tj
+ET
+0.97 0.98 0.99 rg
+50. 298.3899999999999864 495.2799999999999727 -20. re
+f
+0.89 0.91 0.94 RG
+50. 278.3899999999999864 m
+545.2799999999999727 278.3899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 285.3899999999999864 Td
+(AI Inference Latency) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 285.3899999999999864 Td
+(1,120 ms) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 285.3899999999999864 Td
+(< 2,500 ms) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 285.3899999999999864 Td
+(PASSED) Tj
+ET
+0.89 0.91 0.94 RG
+50. 258.3899999999999864 m
+545.2799999999999727 258.3899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 265.3899999999999864 Td
+(Overall API Response Time) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 265.3899999999999864 Td
+(1,420 ms) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 265.3899999999999864 Td
+(< 3,000 ms) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 265.3899999999999864 Td
+(PASSED) Tj
+ET
+0.97 0.98 0.99 rg
+50. 258.3899999999999864 495.2799999999999727 -20. re
+f
+0.89 0.91 0.94 RG
+50. 238.3899999999999864 m
+545.2799999999999727 238.3899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 245.3899999999999864 Td
+(EC2 CPU Utilization \(Idle\)) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 245.3899999999999864 Td
+(1.2%) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 245.3899999999999864 Td
+(< 5.0%) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 245.3899999999999864 Td
+(PASSED) Tj
+ET
+0.89 0.91 0.94 RG
+50. 218.3899999999999864 m
+545.2799999999999727 218.3899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 225.3899999999999864 Td
+(EC2 CPU Utilization \(Peak\)) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 225.3899999999999864 Td
+(14.8%) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 225.3899999999999864 Td
+(< 70.0%) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 225.3899999999999864 Td
+(PASSED) Tj
+ET
+0.97 0.98 0.99 rg
+50. 218.3899999999999864 495.2799999999999727 -20. re
+f
+0.89 0.91 0.94 RG
+50. 198.3899999999999864 m
+545.2799999999999727 198.3899999999999864 l
+S
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+56. 205.3899999999999864 Td
+(Memory Footprint) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+166. 205.3899999999999864 Td
+(620 MB / 1024 MB) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+316. 205.3899999999999864 Td
+(< 850 MB) Tj
+ET
+BT
+/F1 8.5 Tf
+9.7749999999999986 TL
+0.278 0.333 0.412 rg
+426. 205.3899999999999864 Td
+(PASSED \(Swap Stable\)) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 35. m
+545.2799999999999727 35. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 22. Td
+(AWS Public Cloud Implementation - Group Project) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+510.2799999999999727 22. Td
+(Page 5) Tj
+ET
+endstream
+endobj
+13 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.2799999999999727 841.8899999999999864]
+/Contents 14 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 6112
+>>
+stream
+0.5 w
+0.86 0.88 0.9 RG
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 806.8899999999999864 Td
+(CLOUD COMPUTING PROJECT REPORT | NOVA AI PLATFORM) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 799.8899999999999864 m
+545.2799999999999727 799.8899999999999864 l
+S
+0.12 0.16 0.23 rg
+50. 761.8899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 747.8899999999999864 Td
+(8. COST OPTIMIZATION & ZERO-COST STRATEGY) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 735.8899999999999864 Td
+(A central challenge in university cloud submissions is avoiding unexpected cloud billing. Traditional production) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 722.3899999999999864 Td
+(blueprints prescribe an Application Load Balancer \(ALB\) and NAT Gateways, which cost ~$50/month even when idle.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 708.8899999999999864 Td
+(Our architecture intentionally substitutes these with zero-cost equivalents:) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 689.3899999999999864 Td
+(*  ALB Elimination: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+146.0649999999999977 689.3899999999999864 Td
+(Replaced the AWS Application Load Balancer \($18-22/month\) with an optimized, lightweight Nginx reverse proxy) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 675.8899999999999864 Td
+(hosted directly on the EC2 instance, operating within the 750 free hours/month.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 662.3899999999999864 Td
+(*  No NAT Gateway: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+148.25 662.3899999999999864 Td
+(Configured the EC2 instance in a public subnet with an Internet Gateway route and free Gateway VPC Endpoints) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+70. 648.8899999999999864 Td
+(for S3 and DynamoDB, saving ~$32/month.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 635.3899999999999864 Td
+(*  Serverless Pay-Per-Request DB: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+214.9400000000000261 635.3899999999999864 Td
+(DynamoDB utilizes On-Demand read/write units with 25 GB of permanent free tier storage.) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 621.8899999999999864 Td
+(*  Total Project Cost: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+152.0500000000000114 621.8899999999999864 Td
+($0.00 \(Zero billing incurred across all development, deployment, and evaluation phases\).) Tj
+ET
+0.12 0.16 0.23 rg
+50. 598.3899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 584.3899999999999864 Td
+(9. CONCLUSION & FUTURE ENHANCEMENTS) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 572.3899999999999864 Td
+(The Nova AI project successfully validates how modern public cloud infrastructure \(AWS\) can be orchestrated to solve) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 558.8899999999999864 Td
+(tangible commercial challenges. By combining serverless storage \(S3\), NoSQL persistence \(DynamoDB\), compute) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 545.3899999999999864 Td
+(virtualization \(EC2\), and generative AI, the team delivered an automated, enterprise-grade scope analysis engine.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 525.8899999999999864 Td
+(Future roadmap items include multi-contract diffing, automated Slack and Gmail webhook bots, and) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 512.3899999999999864 Td
+(infrastructure-as-code auto-scaling using the codified AWS CloudFormation template \(infra/nova.yaml\) already) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+50. 498.8899999999999864 Td
+(included in the source repository.) Tj
+ET
+0.12 0.16 0.23 rg
+50. 469.3899999999999864 4. -18. re
+f
+BT
+/F2 13 Tf
+14.9499999999999993 TL
+0.118 0.161 0.231 rg
+62. 455.3899999999999864 Td
+(10. SUBMISSION VERIFICATION & ARTIFACTS) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 443.3899999999999864 Td
+(*  Live Production URL: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+166.4900000000000091 443.3899999999999864 Td
+(http://3.26.15.247) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 429.8899999999999864 Td
+(*  GitHub Source Code: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+165.4449999999999932 429.8899999999999864 Td
+(https://github.com/developer4949-code/Nova.ai.git) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 416.3899999999999864 Td
+(*  AWS Region: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+129.6299999999999955 416.3899999999999864 Td
+(ap-southeast-2 \(Asia Pacific - Sydney\)) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 402.8899999999999864 Td
+(*  Amazon S3 Bucket: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+157.9400000000000261 402.8899999999999864 Td
+(s3://nova-contracts-debi-2026/contracts/) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 389.3899999999999864 Td
+(*  Amazon DynamoDB Table: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+189.0049999999999955 389.3899999999999864 Td
+(ScopeLogs \(Partition Key: LogId, Region: ap-southeast-2\)) Tj
+ET
+BT
+/F2 9.5 Tf
+10.9249999999999989 TL
+0.118 0.161 0.231 rg
+58. 375.8899999999999864 Td
+(*  Video Demo Duration: ) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.278 0.333 0.412 rg
+168.3899999999999864 375.8899999999999864 Td
+(10 Minutes \(Architecture walkthrough, AWS Console proof, live app demo\)) Tj
+ET
+0.86 0.88 0.9 RG
+0.5 w
+50. 35. m
+545.2799999999999727 35. l
+S
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+50. 22. Td
+(AWS Public Cloud Implementation - Group Project) Tj
+ET
+BT
+/F1 8 Tf
+9.1999999999999993 TL
+0.549 0.588 0.627 rg
+510.2799999999999727 22. Td
+(Page 6) Tj
+ET
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R ]
+/Count 6
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+19 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+20 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+21 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+22 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+23 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+24 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+25 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+26 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+27 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+28 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 15 0 R
+/F2 16 0 R
+/F3 17 0 R
+/F4 18 0 R
+/F5 19 0 R
+/F6 20 0 R
+/F7 21 0 R
+/F8 22 0 R
+/F9 23 0 R
+/F10 24 0 R
+/F11 25 0 R
+/F12 26 0 R
+/F13 27 0 R
+/F14 28 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+29 0 obj
+<<
+/Producer (jsPDF 4.2.1)
+/CreationDate (D:20261107083535+05'30')
+>>
+endobj
+30 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 31
+0000000000 65535 f 
+0000048609 00000 n 
+0000050463 00000 n 
+0000000015 00000 n 
+0000000152 00000 n 
+0000007581 00000 n 
+0000007718 00000 n 
+0000013516 00000 n 
+0000013653 00000 n 
+0000020040 00000 n 
+0000020178 00000 n 
+0000031522 00000 n 
+0000031661 00000 n 
+0000042305 00000 n 
+0000042444 00000 n 
+0000048698 00000 n 
+0000048824 00000 n 
+0000048955 00000 n 
+0000049089 00000 n 
+0000049227 00000 n 
+0000049351 00000 n 
+0000049480 00000 n 
+0000049612 00000 n 
+0000049748 00000 n 
+0000049876 00000 n 
+0000050003 00000 n 
+0000050132 00000 n 
+0000050265 00000 n 
+0000050367 00000 n 
+0000050716 00000 n 
+0000050802 00000 n 
+trailer
+<<
+/Size 31
+/Root 30 0 R
+/Info 29 0 R
+/ID [ <08A896A1E0DBA42B8881E1D6E2CFD5D2> <08A896A1E0DBA42B8881E1D6E2CFD5D2> ]
+>>
+startxref
+50906
+%%EOF
