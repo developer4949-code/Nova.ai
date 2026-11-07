@@ -243,23 +243,23 @@ function generateReport() {
   // Table of Contents
   drawSectionHeading('1', 'TABLE OF CONTENTS');
   const toc = [
-    '1. Problem Statement & Motivation',
-    '2. Project Objectives & Expected Outcomes',
-    '3. System Architecture & Cloud Infrastructure Design',
-    '4. Cloud Services & Features Utilized',
-    '5. Implementation Methodology & Technology Stack',
-    '6. Security, Identity & Data Governance (IAM & IMDSv2)',
-    '7. Experimental Verification, Test Cases & Results',
-    '8. Cost Optimization & Free Tier Architectural Strategy',
-    '9. Conclusion & Future Roadmap',
-    '10. Verification Links & Source Code Repository'
+    { title: '1. Problem Statement & Motivation', page: 2 },
+    { title: '2. Project Objectives & Expected Outcomes', page: 2 },
+    { title: '3. System Architecture & Cloud Infrastructure Design', page: 2 },
+    { title: '4. Cloud Services & Features Utilized', page: 3 },
+    { title: '5. Implementation Methodology & Technology Stack', page: 3 },
+    { title: '6. Security, Identity & Data Governance (IAM & IMDSv2)', page: 4 },
+    { title: '7. Experimental Verification, Test Cases & Results', page: 4 },
+    { title: '8. Cost Optimization & Free Tier Architectural Strategy', page: 5 },
+    { title: '9. Conclusion & Future Roadmap', page: 5 },
+    { title: '10. Verification Links & Source Code Repository', page: 5 }
   ];
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
   doc.setTextColor(71, 85, 105);
   for (let i = 0; i < toc.length; i++) {
-    doc.text(toc[i], margin + 10, y);
-    doc.text(`Page ${Math.floor(i / 3) + 2}`, pageWidth - margin - 35, y);
+    doc.text(toc[i].title, margin + 10, y);
+    doc.text(`Page ${toc[i].page}`, pageWidth - margin - 35, y);
     y += 14;
   }
 
@@ -292,40 +292,27 @@ function generateReport() {
   );
 
   drawSubheading('High-Level Cloud Architecture Diagram');
-  const archLines = [
-    '+-----------------------------------------------------------------------------------------+',
-    '|                         CLIENT LAYER (Browser / Evaluator)                              |',
-    '+-----------------------------------------------------------------------------------------+',
-    '                                           | HTTP Port 80                                  ',
-    '                                           v                                               ',
-    '+-----------------------------------------------------------------------------------------+',
-    '|              AMAZON EC2 VIRTUAL MACHINE (ap-southeast-2 / Sydney)                       |',
-    '|  OS: Amazon Linux 2023 (64-bit x86_64) | Instance Type: t3.micro (Free Tier)            |',
-    '|  Memory: 1 GB RAM + 2 GB Swap Space    | Storage: 20 GB gp3 Root Volume                 |',
-    '|  +-----------------------------------------------------------------------------------+  |',
-    '|  | Nginx Reverse Proxy (Port 80 -> Port 3000)                                        |  |',
-    '|  +-----------------------------------------------------------------------------------+  |',
-    '|  | PM2 Process Manager (Auto-restart, systemd integration)                           |  |',
-    '|  | +-------------------------------------------------------------------------------+ |  |',
-    '|  | | Next.js 15 + React 19 Application Server (Port 3000)                          | |  |',
-    '|  | | - UI Layer: React, Tailwind CSS v4, Lucide Icons, Client History (LocalStorage) | |  |',
-    '|  | | - API Layer: /api/analyze (Mammoth.js, unpdf parser, Model Normalizer)        | |  |',
-    '|  | +-------------------------------------------------------------------------------+ |  |',
-    '|  +-----------------------------------------------------------------------------------+  |',
-    '+-----------------------------------------------------------------------------------------+',
-    '         |                                 |                                 |             ',
-    '         v S3 API (SDK v3)                 v DynamoDB API (SDK v3)           v HTTPS REST  ',
-    '+--------------------+          +--------------------+          +------------------------+ ',
-    '|     AMAZON S3      |          |  AMAZON DYNAMODB   |          |  AI INFERENCE ENGINE   | ',
-    '| Bucket:            |          | Table: ScopeLogs   |          | Model: Gemini Flash /  | ',
-    '| nova-contracts-    |          | Billing: On-Demand |          | Bedrock Converse       | ',
-    '| debi-2026          |          | TTL: ExpiresAt 24h |          | Output: Strict JSON    | ',
-    '+--------------------+          +--------------------+          +------------------------+ ',
-    '         ^                                 ^                                               ',
-    '         +------------------- AWS IAM ROLE ------------------------------------------------+ ',
-    '                             Instance Profile: nova-EC2-Role (Least Privilege)             '
-  ];
-  drawCodeBox(archLines);
+  const imgPath = path.join(__dirname, '..', 'docs', 'architecture-diagram.jpg');
+  if (fs.existsSync(imgPath)) {
+    const imgData = fs.readFileSync(imgPath).toString('base64');
+    const imgWidth = contentWidth;
+    const imgHeight = Math.round(contentWidth / 1.50);
+    checkPageBreak(imgHeight + 35);
+
+    // Subtle container card for publication polish
+    doc.setFillColor(255, 255, 255);
+    doc.setDrawColor(226, 232, 240);
+    doc.roundedRect(margin, y, imgWidth, imgHeight, 4, 4, 'FD');
+    doc.addImage(imgData, 'JPEG', margin + 2, y + 2, imgWidth - 4, imgHeight - 4);
+    y += imgHeight + 10;
+
+    // Elegant figure caption
+    doc.setFont('helvetica', 'italic');
+    doc.setFontSize(8.5);
+    doc.setTextColor(100, 116, 139);
+    doc.text('Figure 1: Nova AI Multi-Tier System Architecture on Amazon Web Services (Sydney ap-southeast-2)', margin + 20, y);
+    y += 20;
+  }
 
   addFooter();
   doc.addPage();
@@ -460,3 +447,4 @@ function generateReport() {
 }
 
 generateReport();
+
